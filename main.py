@@ -56,7 +56,7 @@ async def talk(ctx):
         answer = 'I dont know what you mean'
 
     channel = bot.get_channel(ctx.channel.id)
-    await channel.send(answer)
+    await channel.send(answer, tts=True)
 
 
 
