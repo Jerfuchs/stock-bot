@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 import json
 
-def get_LastPrice(stock): #works/tested
+def get_LastPrice(stock): #Dataframe
     date_format = "%Y-%m-%d"
     today = datetime.today().strftime(date_format)
     start = datetime.date(pd.Timestamp(datetime.today())).strftime(date_format)
