@@ -1,8 +1,9 @@
 import yfinance as yf
 from datetime import datetime
 import pandas as pd
+import json
 
-def getLastPrice(stock): #works/tested
+def get_LastPrice(stock): #works/tested
     date_format = "%Y-%m-%d"
     today = datetime.today().strftime(date_format)
     start = datetime.date(pd.Timestamp(datetime.today())).strftime(date_format)
@@ -13,29 +14,107 @@ def getLastPrice(stock): #works/tested
     answer = str(answer) + '$'
     return answer
 
-def getInfo(stock): #dict
+def get_website(stock): #Dataframe
     data = yf.Ticker(stock)
-    answer = data.info()
-    return answer
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["website"]
 
-def getDividends(stock): #series
+def get_previousClose(stock): #Dataframe
     data = yf.Ticker(stock)
-    answer = data.dividends
-    answer = float(answer)
-    answer = round(answer, 2)
-    answer = str(answer) + '$'
-    return answer
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["previousClose"]
 
-def getmajor_holders(stock): #Dataframe
+def get_regularMarketOpen(stock): #Dataframe
     data = yf.Ticker(stock)
-    answer = data.major_holders()
-    return answer
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["regularMarketOpen"]
 
-def getbalance_sheet(stock): #Dataframe
+def get_twoHundredDayAverage(stock): #Dataframe
     data = yf.Ticker(stock)
-    answer = data.balance_sheet()
-    answer = float(answer)
-    answer = round(answer, 2)
-    answer = str(answer) + '$'
-    return answer
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["twoHundredDayAverage"]
 
+def get_volume24Hr(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["volume24Hr"]
+
+def get_regularMarketDayHigh(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["regularMarketDayHigh"]
+
+def get_regularMarketDayLow(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["regularMarketDayLow"]
+
+def get_currency(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["currency"]
+
+def get_regularMarketVolume(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["regularMarketVolume"]
+
+def get_fiftyTwoWeekHigh(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["fiftyTwoWeekHigh"]
+
+def get_fiftyTwoWeekLow(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["fiftyTwoWeekLow"]
+
+def get_market(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["market"]
+
+def get_dividendYield(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["dividendYield"]
+
+def get_marketCap(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["marketCap"]
+
+def get_trailingPE(stock): #Dataframe
+    data = yf.Ticker(stock)
+    answer = data.info
+    answer = json.dumps(answer)
+    answer = json.loads(answer)
+    return answer["trailingPE"]
