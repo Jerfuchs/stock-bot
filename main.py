@@ -30,7 +30,7 @@ async def talk(ctx):
         answer = 'I dont know what you mean'
 
     channel = bot.get_channel(ctx.channel.id)
-    await channel.send(answer) #Text to speech is that the bot speaks out loud ,tts=True
+    await channel.send(get_api_answer(ctx.clean_content, answer)) #Text to speech is that the bot speaks out loud ,tts=True
 
 
 bot.run(TOKEN) # actually start the bot in discord
