@@ -8,7 +8,7 @@ import typing as t
 
 bot = commands.Bot(command_prefix='-') #Bot listening to @client.commands() / Currently not active due to on_message
 
-stock_bot = EmbeddedBasicBot(files, defaults=True) #Bot initialised/ Extend to Stock Bot
+stock_bot = EmbeddedBasicBot(files) #Bot initialised/ Extend to Stock Bot
 
 @bot.event #Start Signal if bot is online
 async def on_ready():

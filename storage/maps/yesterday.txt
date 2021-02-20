@@ -1,0 +1,9 @@
+[
+["Sunday", "Saturday"],
+["Saturday", "Friday"],
+["Friday", "Thursday"],
+["Thursday", "Wednesday"],
+["Wednesday", "Tuesday"],
+["Tuesday", "Monday"],
+["Monday", "Sunday"],
+]
