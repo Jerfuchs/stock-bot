@@ -139,7 +139,7 @@ def get_trailingPE(stock): #Dataframe
     return answer["trailingPE"]
 
 
-def get_api_answer(userinput, botanswer):
+async def get_api_answer(userinput, botanswer):
     userinput = userinput[start_index:end_index].upper()
 
     if "price" in botanswer:

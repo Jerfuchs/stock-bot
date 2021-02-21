@@ -2,11 +2,7 @@
 # How does stock market works: https://www.youtube.com/watch?v=l3t406oTmss
 
 # files = {Pfad}
-files = {
-    'aiml': ['/stock-bot/storage/categories'],
-    'sets': ['/stock-bot/storage/sets'],
-    'maps': ['/stock-bot/storage/maps']
-    }
+files = {'aiml': ['./storage/categories']}
 
 TOKEN = 'ODA3OTEzNTk4NjEyNDA2Mjgy.YB-6LA.3g7jpwFJUlSYJowgrF5qhDja70c'
 
