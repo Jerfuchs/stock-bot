@@ -12,12 +12,12 @@
             "sentences": [
                 {
                     "words": [
-                        "fine",
-                        "wbu"
+                        "Blackjack",
+                        "sharp"
                     ],
-                    "response": "Sorry, I don't have an answer for that!",
-                    "positivity": 0.0,
-                    "subjectivity": 0.5
+                    "response": "I try to be generous, caring and warm.",
+                    "positivity": -0.125,
+                    "subjectivity": 0.75
                 }
             ],
             "current_sentence_no": 0,
@@ -28,106 +28,35 @@
             "sentences": [
                 {
                     "words": [
-                        "what",
-                        "do",
-                        "pigs",
-                        "say"
+                        "Blackjack"
                     ],
-                    "response": "Sorry, I don't have an answer for that!",
+                    "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
                     "positivity": 0.0,
-                    "subjectivity": 0.5
-                }
-            ],
-            "current_sentence_no": 0,
-            "properties": {}
-        },
-        {
-            "srai": false,
-            "sentences": [
-                {
-                    "words": [
-                        "what",
-                        "sound",
-                        "do",
-                        "pig"
-                    ],
-                    "response": "Sorry, I don't have an answer for that!",
-                    "positivity": 0.0,
-                    "subjectivity": 0.5
-                }
-            ],
-            "current_sentence_no": 0,
-            "properties": {}
-        },
-        {
-            "srai": false,
-            "sentences": [
-                {
-                    "words": [
-                        "what",
-                        "sound",
-                        "does",
-                        "dog"
-                    ],
-                    "response": "Dog says .",
-                    "positivity": 0.0,
-                    "subjectivity": 0.5,
+                    "subjectivity": 0.0,
                     "matched_context": {
                         "max_search_depth": 100,
                         "max_search_timeout": 60,
-                        "total_search_start": "08/02/2021, 16:52:00",
-                        "sentence": "what sound does dog",
-                        "response": "Dog says .",
+                        "total_search_start": "09/02/2021, 18:42:02",
+                        "sentence": "Blackjack",
+                        "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
                         "matched_nodes": [
                             {
                                 "type": "Word",
-                                "node": "WORD [WHAT]",
+                                "node": "ONEORMORE [_]",
                                 "words": [
-                                    "what"
+                                    "Blackjack"
                                 ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [SOUND]",
-                                "words": [
-                                    "sound"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [DOES]",
-                                "words": [
-                                    "does"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [#]",
-                                "words": [],
                                 "multi_word": true,
                                 "wild_card": true
                             },
                             {
                                 "type": "Word",
-                                "node": "SET name=[ANIMAL]",
+                                "node": "WORD [BLACKJACK]",
                                 "words": [
-                                    "dog"
+                                    "Blackjack"
                                 ],
-                                "multi_word": true,
+                                "multi_word": false,
                                 "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [^]",
-                                "words": [],
-                                "multi_word": true,
-                                "wild_card": true
                             },
                             {
                                 "type": "Topic",
@@ -142,15 +71,14 @@
                                 "type": "That",
                                 "node": "ONEORMORE [*]",
                                 "words": [
-                                    "Sorry",
                                     "I",
-                                    "don",
-                                    "t",
-                                    "have",
-                                    "an",
-                                    "answer",
-                                    "for",
-                                    "that"
+                                    "try",
+                                    "to",
+                                    "be",
+                                    "generous",
+                                    "caring",
+                                    "and",
+                                    "warm"
                                 ],
                                 "multi_word": true,
                                 "wild_card": true
@@ -167,70 +95,35 @@
             "sentences": [
                 {
                     "words": [
-                        "what",
-                        "sound",
-                        "does",
-                        "pig"
+                        "D"
                     ],
-                    "response": "Pig says .",
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
                     "positivity": 0.0,
-                    "subjectivity": 0.5,
+                    "subjectivity": 0.0,
                     "matched_context": {
                         "max_search_depth": 100,
                         "max_search_timeout": 60,
-                        "total_search_start": "08/02/2021, 16:52:25",
-                        "sentence": "what sound does pig",
-                        "response": "Pig says .",
+                        "total_search_start": "09/02/2021, 18:42:16",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
                         "matched_nodes": [
                             {
                                 "type": "Word",
-                                "node": "WORD [WHAT]",
+                                "node": "ONEORMORE [_]",
                                 "words": [
-                                    "what"
+                                    "D"
                                 ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [SOUND]",
-                                "words": [
-                                    "sound"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [DOES]",
-                                "words": [
-                                    "does"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [#]",
-                                "words": [],
                                 "multi_word": true,
                                 "wild_card": true
                             },
                             {
                                 "type": "Word",
-                                "node": "SET name=[ANIMAL]",
+                                "node": "WORD [D]",
                                 "words": [
-                                    "pig"
+                                    "D"
                                 ],
-                                "multi_word": true,
+                                "multi_word": false,
                                 "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [^]",
-                                "words": [],
-                                "multi_word": true,
-                                "wild_card": true
                             },
                             {
                                 "type": "Topic",
@@ -243,13 +136,39 @@
                             },
                             {
                                 "type": "That",
-                                "node": "ONEORMORE [*]",
+                                "node": "WORD [Type]",
                                 "words": [
-                                    "Dog",
-                                    "says"
+                                    "Type"
                                 ],
-                                "multi_word": true,
-                                "wild_card": true
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
                             }
                         ]
                     }
@@ -263,32 +182,56 @@
             "sentences": [
                 {
                     "words": [
-                        "how",
-                        "many",
-                        "legs",
-                        "dog"
+                        "10"
                     ],
-                    "response": "A dog has legs.",
+                    "response": "DEALER: 3 <br></br> 3 . <br></br> <br></br> PLAYER: 3 10 <br></br> 13 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
                     "positivity": 0.0,
-                    "subjectivity": 0.5,
+                    "subjectivity": 0.0,
                     "matched_context": {
                         "max_search_depth": 100,
                         "max_search_timeout": 60,
-                        "total_search_start": "08/02/2021, 16:52:43",
-                        "sentence": "how many legs dog",
-                        "response": "A dog has legs.",
+                        "total_search_start": "09/02/2021, 18:42:20",
+                        "sentence": "10",
+                        "response": "DEALER: 3 <br></br> 3 . <br></br> <br></br> PLAYER: 3 10 <br></br> 13 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
                         "matched_nodes": [
                             {
                                 "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
                                 "node": "WORD [HOW]",
                                 "words": [
-                                    "how"
+                                    "How"
                                 ],
                                 "multi_word": false,
                                 "wild_card": false
                             },
                             {
-                                "type": "Word",
+                                "type": "That",
                                 "node": "WORD [MANY]",
                                 "words": [
                                     "many"
@@ -297,43 +240,176 @@
                                 "wild_card": false
                             },
                             {
-                                "type": "Word",
-                                "node": "ZEROORMORE [^]",
-                                "words": [],
-                                "multi_word": true,
-                                "wild_card": true
-                            },
-                            {
-                                "type": "Word",
-                                "node": "SET name=[ANIMAL]",
+                                "type": "That",
+                                "node": "WORD [COINS]",
                                 "words": [
-                                    "dog"
+                                    "coins"
                                 ],
-                                "multi_word": true,
+                                "multi_word": false,
                                 "wild_card": false
                             },
                             {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "H"
+                    ],
+                    "response": "DEALER: 3 <br></br> 3 . <br></br> <br></br> PLAYER: 3 10 Q <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 40 coins . <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:30",
+                        "sentence": "H",
+                        "response": "DEALER: 3 <br></br> 3 . <br></br> <br></br> PLAYER: 3 10 Q <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 40 coins . <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
                                 "type": "Word",
-                                "node": "ZEROORMORE [#]",
-                                "words": [],
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "H"
+                                ],
                                 "multi_word": true,
                                 "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
                             },
                             {
                                 "type": "Topic",
                                 "node": "ONEORMORE [*]",
                                 "words": [
-                                    "*"
+                                    "BLANK"
                                 ],
                                 "multi_word": true,
                                 "wild_card": true
                             },
                             {
                                 "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
                                 "node": "ONEORMORE [*]",
                                 "words": [
-                                    "Pig",
-                                    "says"
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
                                 ],
                                 "multi_word": true,
                                 "wild_card": true
@@ -350,106 +426,1494 @@
             "sentences": [
                 {
                     "words": [
-                        "hallo"
+                        "D"
                     ],
-                    "response": "Sorry, I don't have an answer for that!",
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 40 coins . <br></br> How many coins do you wish to bet (1-10)?",
                     "positivity": 0.0,
-                    "subjectivity": 0.5
-                }
-            ],
-            "current_sentence_no": 0,
-            "properties": {}
-        },
-        {
-            "srai": false,
-            "sentences": [
-                {
-                    "words": [
-                        "hello"
-                    ],
-                    "response": "Sorry, I don't have an answer for that!",
-                    "positivity": 0.0,
-                    "subjectivity": 0.5
-                }
-            ],
-            "current_sentence_no": 0,
-            "properties": {}
-        },
-        {
-            "srai": false,
-            "sentences": [
-                {
-                    "words": [
-                        "what",
-                        "sound",
-                        "does",
-                        "pig"
-                    ],
-                    "response": "Pig says .",
-                    "positivity": 0.0,
-                    "subjectivity": 0.5,
+                    "subjectivity": 0.0,
                     "matched_context": {
                         "max_search_depth": 100,
                         "max_search_timeout": 60,
-                        "total_search_start": "12/02/2021, 19:36:22",
-                        "sentence": "what sound does pig",
-                        "response": "Pig says .",
+                        "total_search_start": "09/02/2021, 18:42:35",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 40 coins . <br></br> How many coins do you wish to bet (1-10)?",
                         "matched_nodes": [
                             {
                                 "type": "Word",
-                                "node": "WORD [WHAT]",
+                                "node": "ONEORMORE [_]",
                                 "words": [
-                                    "what"
+                                    "D"
                                 ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [SOUND]",
-                                "words": [
-                                    "sound"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "WORD [DOES]",
-                                "words": [
-                                    "does"
-                                ],
-                                "multi_word": false,
-                                "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [#]",
-                                "words": [],
                                 "multi_word": true,
                                 "wild_card": true
                             },
                             {
                                 "type": "Word",
-                                "node": "SET name=[ANIMAL]",
+                                "node": "WORD [D]",
                                 "words": [
-                                    "pig"
+                                    "D"
                                 ],
-                                "multi_word": true,
+                                "multi_word": false,
                                 "wild_card": false
-                            },
-                            {
-                                "type": "Word",
-                                "node": "ZEROORMORE [^]",
-                                "words": [],
-                                "multi_word": true,
-                                "wild_card": true
                             },
                             {
                                 "type": "Topic",
                                 "node": "ONEORMORE [*]",
                                 "words": [
-                                    "*"
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: K <br></br> 10 . <br></br> <br></br> PLAYER: 9 7 <br></br> 16 . <br></br> <br></br> Bank: 40 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:37",
+                        "sentence": "10",
+                        "response": "DEALER: K <br></br> 10 . <br></br> <br></br> PLAYER: 9 7 <br></br> 16 . <br></br> <br></br> Bank: 40 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "S"
+                    ],
+                    "response": "DEALER: K 8 <br></br> 18 . <br></br> <br></br> PLAYER: 9 7 <br></br> 16 . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 30 coins . <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:42",
+                        "sentence": "S",
+                        "response": "DEALER: K 8 <br></br> 18 . <br></br> <br></br> PLAYER: 9 7 <br></br> 16 . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 30 coins . <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [S]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 30 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:45",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 30 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: 5 <br></br> 5 . <br></br> <br></br> PLAYER: K 3 <br></br> 13 . <br></br> <br></br> Bank: 30 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:47",
+                        "sentence": "10",
+                        "response": "DEALER: 5 <br></br> 5 . <br></br> <br></br> PLAYER: K 3 <br></br> 13 . <br></br> <br></br> Bank: 30 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "H"
+                    ],
+                    "response": "DEALER: 5 <br></br> 5 . <br></br> <br></br> PLAYER: K 3 Q <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 20 coins . <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:53",
+                        "sentence": "H",
+                        "response": "DEALER: 5 <br></br> 5 . <br></br> <br></br> PLAYER: K 3 Q <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 20 coins . <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 20 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:55",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 20 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: 4 <br></br> 4 . <br></br> <br></br> PLAYER: 10 6 <br></br> 16 . <br></br> <br></br> Bank: 20 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:42:57",
+                        "sentence": "10",
+                        "response": "DEALER: 4 <br></br> 4 . <br></br> <br></br> PLAYER: 10 6 <br></br> 16 . <br></br> <br></br> Bank: 20 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "S"
+                    ],
+                    "response": "DEALER: 4 6 A <br></br> 21 . <br></br> <br></br> PLAYER: 10 6 <br></br> 16 . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 10 coins . <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:01",
+                        "sentence": "S",
+                        "response": "DEALER: 4 6 A <br></br> 21 . <br></br> <br></br> PLAYER: 10 6 <br></br> 16 . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 10 coins . <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [S]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 10 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:04",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 10 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q <br></br> 17 . <br></br> <br></br> Bank: 10 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to Hit or S to Stand.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:05",
+                        "sentence": "10",
+                        "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q <br></br> 17 . <br></br> <br></br> Bank: 10 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to Hit or S to Stand.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "H"
+                    ],
+                    "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q 2 <br></br> 19 . <br></br> <br></br> Bank: 10 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit or S to stand.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:14",
+                        "sentence": "H",
+                        "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q 2 <br></br> 19 . <br></br> <br></br> Bank: 10 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit or S to stand.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "Hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "or",
+                                    "S",
+                                    "to",
+                                    "Stand"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "H"
+                    ],
+                    "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q 2 6 <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 0 coins . <br></br> <br></br> B A N K R U P T ! ! ! <br></br> GAME OVER",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:18",
+                        "sentence": "H",
+                        "response": "DEALER: Q <br></br> 10 . <br></br> <br></br> PLAYER: 7 Q 2 6 <br></br> BUST!! . <br></br> <br></br> You lose 10 coins !. <br></br> Bank: 0 coins . <br></br> <br></br> B A N K R U P T ! ! ! <br></br> GAME OVER",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "or",
+                                    "S",
+                                    "to",
+                                    "stand"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "exit",
+                        "lparen",
+                        "9"
+                    ],
+                    "response": "Are you a man or a woman?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "exit",
+                        "lparen",
+                        "rparen"
+                    ],
+                    "response": "Would you like to do a search for it?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "no"
+                    ],
+                    "response": "Hmmm.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:31",
+                        "sentence": "no",
+                        "response": "Hmmm.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "no"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [NO]",
+                                "words": [
+                                    "no"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
                                 ],
                                 "multi_word": true,
                                 "wild_card": true
@@ -458,15 +1922,1555 @@
                                 "type": "That",
                                 "node": "ONEORMORE [*]",
                                 "words": [
-                                    "Sorry",
-                                    "I",
-                                    "don",
-                                    "t",
-                                    "have",
-                                    "an",
-                                    "answer",
+                                    "Would",
+                                    "you",
+                                    "like",
+                                    "to",
+                                    "do",
+                                    "a",
+                                    "search",
                                     "for",
-                                    "that"
+                                    "it"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "Blackjack"
+                    ],
+                    "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:36",
+                        "sentence": "Blackjack",
+                        "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "Hmmm"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:37",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: 2 <br></br> 2 . <br></br> <br></br> PLAYER: 4 K <br></br> 14 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:41",
+                        "sentence": "10",
+                        "response": "DEALER: 2 <br></br> 2 . <br></br> <br></br> PLAYER: 4 K <br></br> 14 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "exit"
+                    ],
+                    "response": "Are you a man or a woman?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "a"
+                    ],
+                    "response": "a is an article.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:45",
+                        "sentence": "a",
+                        "response": "a is an article.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "a"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [A]",
+                                "words": [
+                                    "a"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Word",
+                                "node": "SET name=[ARTICLE]",
+                                "words": [
+                                    "a"
+                                ],
+                                "multi_word": true,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "Are",
+                                    "you",
+                                    "a",
+                                    "man",
+                                    "or",
+                                    "a",
+                                    "woman"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "D is a letter.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:47",
+                        "sentence": "D",
+                        "response": "D is a letter.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "SET name=[LETTER]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "a",
+                                    "is",
+                                    "an",
+                                    "article"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "A"
+                    ],
+                    "response": "A is an article.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:49",
+                        "sentence": "A",
+                        "response": "A is an article.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "A"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [A]",
+                                "words": [
+                                    "A"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Word",
+                                "node": "SET name=[ARTICLE]",
+                                "words": [
+                                    "a"
+                                ],
+                                "multi_word": true,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "D",
+                                    "is",
+                                    "a",
+                                    "letter"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "E"
+                    ],
+                    "response": "E is a letter.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:43:50",
+                        "sentence": "E",
+                        "response": "E is a letter.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "E"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "SET name=[LETTER]",
+                                "words": [
+                                    "E"
+                                ],
+                                "multi_word": true,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "A",
+                                    "is",
+                                    "an",
+                                    "article"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "YEMPTY"
+                    ],
+                    "response": "You can give me honest feedback.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 18:44:05",
+                        "sentence": "YEMPTY",
+                        "response": "You can give me honest feedback.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "YEMPTY"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [YEMPTY]",
+                                "words": [
+                                    "YEMPTY"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "E",
+                                    "is",
+                                    "a",
+                                    "letter"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "Blackjack"
+                    ],
+                    "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:10",
+                        "sentence": "Blackjack",
+                        "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "You",
+                                    "can",
+                                    "give",
+                                    "me",
+                                    "honest",
+                                    "feedback"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:27",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "Who",
+                        "are",
+                        "you"
+                    ],
+                    "response": "You cannot bet \" Who are you coins\". Please choose a number of coins (1-10) or type QUIT to finish playing. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:33",
+                        "sentence": "Who are you",
+                        "response": "You cannot bet \" Who are you coins\". Please choose a number of coins (1-10) or type QUIT to finish playing. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "Who",
+                                    "are",
+                                    "you"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [ARE]",
+                                "words": [
+                                    "are"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: A <br></br> 1 OR 11 . <br></br> <br></br> PLAYER: 9 4 <br></br> 13 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:39",
+                        "sentence": "10",
+                        "response": "DEALER: A <br></br> 1 OR 11 . <br></br> <br></br> PLAYER: 9 4 <br></br> 13 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "Hello"
+                    ],
+                    "response": "Good evening.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:44",
+                        "sentence": "Hello",
+                        "response": "Good evening.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "Hello"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [HELLO]",
+                                "words": [
+                                    "Hello"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "Type",
+                                    "H",
+                                    "to",
+                                    "hit",
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "Blackjack"
+                    ],
+                    "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:50",
+                        "sentence": "Blackjack",
+                        "response": "Welcome to my Blackjack game. You start the game with 50 coins. <br></br> <br></br> HOUSE RULES: <br></br> - Dealer must draw to 17 <br></br> - Blackjack pays 3 for 2 (rounded up to the nearest coin) <br></br> - Maximum bet is 10 coins <br></br> - The game ends when you either lose all your coins or break the bank by making 250 coins <br></br> <br></br> Good luck! <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "Blackjack"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "Good",
+                                    "evening"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "D"
+                    ],
+                    "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:52",
+                        "sentence": "D",
+                        "response": "Type 'QUIT' to end the game. <br></br> <br></br> Bank: 50 coins . <br></br> How many coins do you wish to bet (1-10)?",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [Type]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [D]",
+                                "words": [
+                                    "D"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [to]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [deal]",
+                                "words": [
+                                    "deal"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "10"
+                    ],
+                    "response": "DEALER: K <br></br> 10 . <br></br> <br></br> PLAYER: 9 K <br></br> 19 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:53",
+                        "sentence": "10",
+                        "response": "DEALER: K <br></br> 10 . <br></br> <br></br> PLAYER: 9 K <br></br> 19 . <br></br> <br></br> Bank: 50 coins . <br></br> Bet: 10 coins . <br></br> <br></br> Type H to hit, S to stand or D to double down.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "__TOPIC__"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "WORD [BLACKJACK]",
+                                "words": [
+                                    "BLACKJACK"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HOW]",
+                                "words": [
+                                    "How"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [MANY]",
+                                "words": [
+                                    "many"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [COINS]",
+                                "words": [
+                                    "coins"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [DO]",
+                                "words": [
+                                    "do"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [YOU]",
+                                "words": [
+                                    "you"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [WISH]",
+                                "words": [
+                                    "wish"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [BET]",
+                                "words": [
+                                    "bet"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [1]",
+                                "words": [
+                                    "1"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [10]",
+                                "words": [
+                                    "10"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "current_sentence_no": 0,
+            "properties": {}
+        },
+        {
+            "srai": false,
+            "sentences": [
+                {
+                    "words": [
+                        "S"
+                    ],
+                    "response": "DEALER: K 8 <br></br> 18 . <br></br> <br></br> PLAYER: 9 K <br></br> 19 . <br></br> <br></br> You win 10 coins ! <br></br> Bank: 60 coins . <br></br> <br></br> Type D to deal.",
+                    "positivity": 0.0,
+                    "subjectivity": 0.0,
+                    "matched_context": {
+                        "max_search_depth": 100,
+                        "max_search_timeout": 60,
+                        "total_search_start": "09/02/2021, 19:07:57",
+                        "sentence": "S",
+                        "response": "DEALER: K 8 <br></br> 18 . <br></br> <br></br> PLAYER: 9 K <br></br> 19 . <br></br> <br></br> You win 10 coins ! <br></br> Bank: 60 coins . <br></br> <br></br> Type D to deal.",
+                        "matched_nodes": [
+                            {
+                                "type": "Word",
+                                "node": "ONEORMORE [_]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "Word",
+                                "node": "WORD [S]",
+                                "words": [
+                                    "S"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "Topic",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "BLANK"
+                                ],
+                                "multi_word": true,
+                                "wild_card": true
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TYPE]",
+                                "words": [
+                                    "Type"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [H]",
+                                "words": [
+                                    "H"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [TO]",
+                                "words": [
+                                    "to"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "WORD [HIT]",
+                                "words": [
+                                    "hit"
+                                ],
+                                "multi_word": false,
+                                "wild_card": false
+                            },
+                            {
+                                "type": "That",
+                                "node": "ONEORMORE [*]",
+                                "words": [
+                                    "S",
+                                    "to",
+                                    "stand",
+                                    "or",
+                                    "D",
+                                    "to",
+                                    "double",
+                                    "down"
                                 ],
                                 "multi_word": true,
                                 "wild_card": true
@@ -481,8 +3485,35 @@
     ],
     "max_histories": 100,
     "properties": {
-        "topic": "*",
-        "positivity": "0.0",
-        "subjectivity": "0.5"
+        "topic": "BLANK",
+        "positivity": "-0.003205128205128205",
+        "subjectivity": "0.019230769230769232",
+        "coins": "60",
+        "bankcoin": "coins",
+        "plbet": "10",
+        "plstake": "10",
+        "bankmessage": "",
+        "goodbet": "YES",
+        "savecoins": "50",
+        "dealerhand": "K 8",
+        "dealertot": "18",
+        "dealerace": "",
+        "dlrhasace": "",
+        "dlrfinish": "Y",
+        "playerhand": "9 K",
+        "playertot": "19",
+        "playerace": "",
+        "plhasace": "",
+        "pldouble": "NO",
+        "plbjwin": "15",
+        "playcoin": "coins",
+        "gamemessage": "Type H to hit, S to stand or D to double down.",
+        "debj": "NO",
+        "plbj": "NO",
+        "bjresult": "You win 10 coins !",
+        "bjwin": "WIN",
+        "bjcheck": "NO NO",
+        "bjmessage": "Type D to deal.",
+        "dayphase": "Night"
     }
 }

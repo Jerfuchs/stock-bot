@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<aiml>
+
+    <category>
+        <pattern>DEINE MUTTER ^</pattern>
+        <template>ok</template>
+    </category>
+
+    <category>
+        <pattern>I AM FROM *</pattern>
+        <template>
+             Cool, have you been to the capital city <map name="nation2capital" />?
+        </template>
+    <category>
+
+    <category>
+        <pattern>WHAT COUNTRY IS * <set>article</set> CAPITAL *</pattern>
+        <template><map><name>capital2nation</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT NATION IS * <set>article</set> CAPITAL *</pattern>
+        <template><map><name>capital2nation</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT COUNTRY IS * CAPITAL *</pattern>
+        <template><map><name>capital2nation</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT NATION IS * CAPITAL *</pattern>
+        <template><map><name>capital2nation</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT STATE IS * <set>article</set> CAPITAL *</pattern>
+        <template><map><name>capital2state</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT STATE IS * CAPITAL *</pattern>
+        <template><map><name>capital2state</name><star/></map></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE CAPITAL OF <set>state</set></pattern>
+        <template><map><name>state2capital</name><star/></map>.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE CAPITAL OF <set>nation</set></pattern>
+        <template><map><name>nation2capital</name><star/></map>.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS AIML ^</pattern>
+        <template>AIML, or Artificial Intelligence Markup Language, is an XML dialect for creating natural language software agents.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE FIRST MONTH *</pattern>
+        <template>January.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY # STARTS WITH # S</pattern>
+        <template>Saturday, Sunday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAYS # START WITH # S</pattern>
+        <template>Saturday, Sunday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY # STARTS WITH # M</pattern>
+        <template>Monday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY # STARTS WITH # W</pattern>
+        <template>Wednesday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY # STARTS WITH # F</pattern>
+        <template>Friday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY # STARTS WITH # T</pattern>
+        <template>Tuesday, Thursday.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAYS # START WITH # T</pattern>
+        <template>Tuesday, Thursday.</template>
+    </category>
+</aiml>
