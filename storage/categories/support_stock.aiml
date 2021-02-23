@@ -2,14 +2,12 @@
 <aiml>
 
   <category>
-    <pattern>Help</pattern>
+    <pattern>HELP</pattern>
     <template>
     Here you can ask all the important information that you need to know about stocks. Ask one of the following questions to get the corresponding answer.
-    <br>
-    </br>
+    <br />
     - What are stocks?
-    <br>
-    </br>
+    <br />
     - Where to buy stocks?
     <br>
     </br>

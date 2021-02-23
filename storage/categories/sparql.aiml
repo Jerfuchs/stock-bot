@@ -1,0 +1,20 @@
+<category>
+    <pattern>WHO IS *</pattern>
+    <template><star/></template>
+</category>
+
+<category>
+    <pattern>WHAT IS *</pattern>
+    <template>WHAT IS <star/></template>
+</category>
+
+
+
+
+
+
+
+<category>
+    <pattern>HOW MANY CITIES DOES * HAS</pattern>
+    <template><star/></template>
+</category>
