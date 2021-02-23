@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>Help</pattern>
+    <template>
+    Here you can ask all the important information that you need to know about stocks. Ask one of the following questions to get the corresponding answer.
+    <br>
+    </br>
+    - What are stocks?
+    <br>
+    </br>
+    - Where to buy stocks?
+    <br>
+    </br>
+    - What is a ticker symbol?
+    <br>
+    </br>
+    - How to see the current price of the different stocks?
+    <br>
+    </br>
+    - What are ETFs
+    <br>
+    </br>
+    - What are mutual Funds?
+    <br>
+    </br>
+    - Do you recommend any stocks or funds?
+    <br>
+    </br>
+
+    Important key figures that you should know about stocks:
+    <br>
+    </br>
+    - What is a dividend?
+    <br>
+    </br>
+    - How to see the dividend of a stock?
+    <br>
+    </br>
+    - What is PE ratio?
+    <br>
+    </br>
+    How to get PE ratio?
+    <br>
+    </br>
+   - What is market capitalization?
+    <br>
+    </br>
+   - How to get the market cap?
+    <br>
+    </br>
+   - What is volume?
+    <br>
+    </br>
+   - How to get the stock volume?
+    <br>
+    </br>
+   - How to get the 52 week high and low?
+    <br>
+    </br>
+   - There is also a lot of other information that you can ask me regarding stocks. If you are interested in more information type: list additional commands
+    <br>
+    </br>
+    </template>
+  </category>
+
+   <category>
+    <pattern>what is a ticker symbol </pattern>
+    <template>Ticker symbols are unique identifiers for stocks or funds. Ticker symbols are usually between 1-4 letters long. You can easily find the ticker symbols for each stock / fund online.
+    <br>
+    </br>
+    Here is a short List for ticker symbols of different companies:
+
+    <br>
+    </br>
+    Apple - AAPL
+    <br>
+    </br>
+    Tesla - TSLA
+    <br>
+    </br>
+    Amazon - AMZN
+    <br>
+    </br>
+    Microsoft - MSFT
+    <br>
+    </br>
+    NVIDIA - NVDA
+    <br>
+    </br>
+    Intel - INTC
+    <br>
+    </br>
+    GameStop -- GME
+    <br>
+    </br>
+    Bayer AG - BAYN
+    </template>
+  </category>
+
+   <category>
+    <pattern>list additional commands</pattern>
+    <template>To get information about stocks always write the command with the following syntax:
+    <br>
+    </br>
+    get tickersymbol(4 letters for example AAPL) the last entry is variable depending on what you want to look up. For example: get AAPL volume.
+    <br>
+    </br>
+    Here is a list of additional commands:
+    <br>
+    </br>
+    - year low (shows the lowest stock price in the year)
+    <br>
+    </br>
+    - year high (shows the highest stock price in the year)
+    <br>
+    </br>
+    - market
+    <br>
+    </br>
+    - currency
+    <br>
+    </br>
+    - regular low
+    <br>
+    </br>
+    - regular high
+    <br>
+    </br>
+    - 200 average (shows the 200 day average)
+    <br>
+    </br>
+    - close (shows when the market closed)
+    <br>
+    </br>
+    - market open (shows when the market opened)
+    <br>
+    </br>
+    - website (shows the website of the company)
+
+    </template>
+  </category>
+
+  <category>
+    <pattern>what is pe ratio</pattern>
+    <template>P/E stands for price to earnings ratio. It is one measure to evalute if a stock is over or undervalued.
+    Price is the current stock price add earnings is calculated by dividing earnings with the number of outstanding shares. For example: A company has a share price of 10 €, it has 10000€ in earnings and 10000 outstanding shares.
+    That means that the P/E ratio is 10 / 1. Keep in mind that there is not a fixed number when a stock is considered expensive. In general a stock with a lower P/E ratio is considered cheaper. But it is only one of the key figures that should be considered when buying a stock. A stock with a high P/E ratio is not neccesarily a bad buy.
+    </template>
+  </category>
+
+  <category>
+    <pattern>how to get market cap</pattern>
+    <template>
+         write the following command: get tickersymbol(4 letters for example AAPL) market cap
+    </template>
+  </category>
+
+  <category>
+    <pattern>how to get the stock volume</pattern>
+    <template>
+         write the following command: get tickersymbol(4 letters for example AAPL) volume
+    </template>
+  </category>
+
+  <category>
+    <pattern>how to get pe ratio</pattern>
+    <template>
+         write the following command: get tickersymbol(4 letters for example AAPL) trailing pe
+    </template>
+  </category>
+
+  <category>
+    <pattern>how to see the dividend of a stock</pattern>
+    <template>
+        write the following command: get tickersymbol(4 letters for example AAPL) dividend
+    </template>
+  </category>
+
+  <category>
+    <pattern>what is volume</pattern>
+    <template>Trading volume is a measure of how much of a given financial asset has traded in a period of time. For stocks, volume is measured in the number of shares traded.
+    </template>
+  </category>
+
+   <category>
+    <pattern>what is market capitalization</pattern>
+    <template>Market cap measures what a company is worth on the open market, as well as the market's perception of its future prospects, because it reflects what investors are willing to pay for its stock. Large-cap companies are typically firms with a market value of $10 billion or more.
+     It is calculated by multiplying the number of outstanding shares with the current share price.
+    </template>
+  </category>
+  A stock (also known as equity) is a security that represents the ownership of a fraction of a corporation.
+  <category>
+    <pattern>what is a dividend</pattern>
+    <template>A dividend is paid per share of stock. For example if you own 10 stocks of a company and that company pays 2€ in annual cash dividends, you will receive 20€ per year. It is important to note that not all companies pay out a dividend.
+    </template>
+  </category>
+
+  <category>
+    <pattern>what are stocks</pattern>
+    <template>A stock (also known as equity) is a security that represents the ownership of a fraction of a corporation.
+    </template>
+  </category>
+
+   <category>
+    <pattern>where to buy stocks</pattern>
+    <template>
+        Stocks are bought and sold on stock exchanges. Most banks can offer to let you open a stock depot. With this depot you are able to buy and sell different financial equities including stocks.
+    </template>
+   </category>
+
+
+   <category>
+    <pattern>what are mutual Funds</pattern>
+    <template>
+        Mutual funds work by pooling your money with the money of other investors and investing it in a portfolio of other assets (e.g., stocks, bonds). This means you'll be able to invest in portfolios that you wouldn't be able to afford alone because you're investing alongside other investors.
+    </template>
+   </category>
+
+   <category>
+    <pattern>what are etfs</pattern>
+    <template>
+        ETF stands for exchange traded fund. It is a type of security that involves a collection of stocks that track an underlying index. For example: there are ETFs that track different indices like DAX or S and P 500. A huge advantage of investing into indices compared to stocks is that they are highly diversified.
+        When you invest into the S and P 500 you are also invested in 500 of the biggest US-American companies.
+    </template>
+   </category>
+
+   <category>
+    <pattern>do you recommend any stocks or funds</pattern>
+    <template>
+        I am not a financial advisor but i recommend investing into ETFs, which cover a broad spectrum of the market. ETFs have the huge advantage of high diversification.
+    </template>
+   </category>
+
+
+
+
+</aiml>
