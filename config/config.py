@@ -4,7 +4,7 @@
 # files = {Pfad}
 files = {'aiml': ['./storage/categories']}
 
-TOKEN = 'ODEzODA1NTU4OTkzNTE4NjUz.YDUpfQ.U4q36__bkJb2Ap_CGAEtHWly-6A'
+TOKEN = 'ODEzNDQ2MjU1Nzk0ODQ3NzY2.YDPa3A.o2pM6xoaj42_cfTWR-DKWOUYCPM√'
 
 # TOKEN = 'ODEzNDQ2MjU1Nzk0ODQ3NzY2.YDPa3A.o2pM6xoaj42_cfTWR-DKWOUYCPM√'
 

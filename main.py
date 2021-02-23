@@ -28,11 +28,11 @@ async def talk(ctx):
         return
 
     answer = stock_bot.ask_question(ctx.clean_content)
-    print("Response = %s" % stock_bot.ask_question(ctx.clean_content))
-   # if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
-       # answer = 'I dont know what you mean'
+    if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
+        answer = 'I dont know what you mean'
 
     channel = bot.get_channel(ctx.channel.id)
+    answer = get_api_answer(ctx.clean_content, answer)
     await channel.send(answer)  # Text to speech is that the bot speaks out loud ,tts=True
 
 

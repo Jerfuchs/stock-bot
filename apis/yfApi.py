@@ -15,7 +15,7 @@ def get_LastPrice(stock): #Dataframe
     answer = str(df["Close"].tolist()[-1])
     answer = float(answer)
     answer = round(answer, 2)
-    answer = str(answer) + '$'
+    answer = str(answer)
     return answer
 
 
@@ -139,151 +139,151 @@ def get_trailingPE(stock): #Dataframe
     return answer["trailingPE"]
 
 
-async def get_api_answer(userinput, botanswer):
-    userinput = userinput[start_index:end_index].upper()
+def get_api_answer(userinput, botanswer):
+    ticker = userinput[start_index:end_index].upper()
 
-    if "price" in botanswer:
+    if "price" in userinput:
         try:
-            apidata = get_LastPrice(userinput)
+            apidata = get_LastPrice(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer ="It is: " + str(apidata)
         return botanswer
 
-    elif "website" in botanswer:
+    elif "website" in userinput:
         try:
-            apidata = get_website(userinput)
+            apidata = get_website(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "close" in botanswer:
+    elif "close" in userinput:
         try:
-            apidata = get_previousClose(userinput)
+            apidata = get_previousClose(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "market open" in botanswer:
+    elif "market open" in userinput:
         try:
-            apidata = get_regularMarketOpen(userinput)
+            apidata = get_regularMarketOpen(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "200 avaerage" in botanswer:
+    elif "200 avaerage" in userinput:
         try:
-            apidata = get_twoHundredDayAverage(userinput)
+            apidata = get_twoHundredDayAverage(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "volume" in botanswer:
+    elif "volume" in userinput:
         try:
-            apidata = get_volume24Hr(userinput)
+            apidata = get_volume24Hr(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "regular high" in botanswer:
+    elif "regular high" in userinput:
         try:
-            apidata = get_regularMarketDayHigh(userinput)
+            apidata = get_regularMarketDayHigh(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "regular low" in botanswer:
+    elif "regular low" in userinput:
         try:
-            apidata = get_regularMarketDayLow(userinput)
+            apidata = get_regularMarketDayLow(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "currency" in botanswer:
+    elif "currency" in userinput:
         try:
-            apidata = get_currency(userinput)
+            apidata = get_currency(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "market volume" in botanswer:
+    elif "market volume" in userinput:
         try:
-            apidata = get_regularMarketVolume(userinput)
+            apidata = get_regularMarketVolume(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "year high" in botanswer:
+    elif "year high" in userinput:
         try:
-            apidata = get_fiftyTwoWeekHigh(userinput)
+            apidata = get_fiftyTwoWeekHigh(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "year low" in botanswer:
+    elif "year low" in userinput:
         try:
-            apidata = get_fiftyTwoWeekLow(userinput)
+            apidata = get_fiftyTwoWeekLow(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "market cap" in botanswer:
+    elif "market cap" in userinput:
         try:
-            apidata = get_marketCap(userinput)
+            apidata = get_marketCap(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "dividend" in botanswer:
+    elif "dividend" in userinput:
         try:
-            apidata = get_dividendYield(userinput)
+            apidata = get_dividendYield(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "market" in botanswer:
+    elif "market" in userinput:
         try:
-            apidata = get_market(userinput)
+            apidata = get_market(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
-    elif "trailing pe" in botanswer:
+    elif "trailing pe" in userinput:
         try:
-            apidata = get_trailingPE(userinput)
+            apidata = get_trailingPE(ticker)
         except:
             return "No data could be found"
 
-        botanswer = botanswer + " " + str(apidata)
+        botanswer = "It is: " + str(apidata)
         return botanswer
 
     else:
