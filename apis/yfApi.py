@@ -140,7 +140,9 @@ def get_trailingPE(stock): #Dataframe
 
 
 def get_api_answer(userinput, botanswer):
-    ticker = userinput[start_index:end_index].upper()
+    #temp = userinput.split(" ")
+    #print(temp)
+    ticker = userinput.split(" ")[1].upper()
 
     if "price" in userinput:
         try:
