@@ -296,36 +296,39 @@
     </topic>
 
     <topic name="FOOD">
-            <category>
-                <pattern>#</pattern>
-                <template>
-                    <think>
-                        <set name="food"><star /></set>
-                        <set name="topic"></set>
-                    </think>
-                    <condition name="food">
-                        <li>I love that too! *-*</li>
-                    </condition>
-                </template>
-            </category>
-        </topic>
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="food"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="food">
+                    <li>I love that too! *-*</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
 
 
+    <category>
+        <pattern>WHATS POPPIN #</pattern>
+        <template>Brand new whip just hopped in hahah</template>
+    </category>
 
-	<category>
-        <pattern>ASK ME *</pattern>
-        <template>
-            <random>
-                <li><think><set name="topic">MOVIES</set></think>What's your favourite movie?</li>
-                <li><think><set name="topic">SERIES</set></think>What kind of series do you like the most?</li>
-                <li><think><set name="topic">MUSIC</set></think>What kind of music do you like the most?</li>
-                <li><think><set name="topic">SPORTS</set></think>What kind of sports do you like the most?</li>
-                <li><think><set name="topic">FOOD</set></think>What's your favourite food?</li>
-                <li>Do you like jokes?</li>
-                <li>Do you like programing?</li>
-                <li>Do you like Germany?</li>
-            </random>
-        </template>
+    <category>
+        <pattern>WHATS POPPIN' #</pattern>
+        <template>Brand new whip just hopped in hahah</template>
+    </category>
+
+    <category>
+        <pattern>WAS GEHT #</pattern>
+        <template>Chillen haha</template>
+    </category>
+
+    <category>
+        <pattern>WAS GEHT AB #</pattern>
+        <template>Alles, was nicht fest ist leel</template>
     </category>
 
     <category>
@@ -459,47 +462,6 @@
     </category>
 
     <category>
-        <pattern>WHAT ARE YOU DOING *</pattern>
-        <template>
-            <think><set name="topic">DOING</set></think>
-            <random>
-                <li>I'm chillin' wbu?</li>
-                <li>Nothing, wbu?</li>
-                <li>I've been waiting for you, wbu?</li>
-                <li>Listening to music, wbu?</li>
-                <li>Watching some series, wbu?</li>
-                <li>Chatting with you lol. Wbu?</li>
-                <li>I'm chillin' what about you?</li>
-                <li>Nothing, what about you?</li>
-                <li>I've been waiting for you, what about you?</li>
-                <li>Listening to music, what about you?</li>
-                <li>Watching some series, what about you?</li>
-                <li>Chatting with you lol. What about you?</li>
-            </random>
-        </template>
-    </category>
-
-    <category>
-        <pattern>WHATS POPPIN #</pattern>
-        <template>Brand new whip just hopped in hahah</template>
-    </category>
-
-    <category>
-        <pattern>WHATS POPPIN' #</pattern>
-        <template>Brand new whip just hopped in hahah</template>
-    </category>
-
-    <category>
-        <pattern>WAS GEHT #</pattern>
-        <template>Chillen haha</template>
-    </category>
-
-    <category>
-        <pattern>WAS GEHT AB #</pattern>
-        <template>Alles, was nicht fest ist leel</template>
-    </category>
-
-    <category>
         <pattern>MY NAME IS *</pattern>
         <template>
             Okay <star />!
@@ -588,6 +550,93 @@
     </category>
 
     <category>
+        <pattern>WHAT ARE YOU DOING *</pattern>
+        <template>
+            <think><set name="topic">DOING</set></think>
+            <random>
+                <li>I'm chillin' wbu?</li>
+                <li>Nothing, wbu?</li>
+                <li>I've been waiting for you, wbu?</li>
+                <li>Listening to music, wbu?</li>
+                <li>Watching some series, wbu?</li>
+                <li>Chatting with you lol. Wbu?</li>
+                <li>I'm chillin' what about you?</li>
+                <li>Nothing, what about you?</li>
+                <li>I've been waiting for you, what about you?</li>
+                <li>Listening to music, what about you?</li>
+                <li>Watching some series, what about you?</li>
+                <li>Chatting with you lol. What about you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK ME *</pattern>
+        <template>
+            <random>
+                <li><think><set name="topic">MOVIES</set></think>What's your favourite movie?</li>
+                <li><think><set name="topic">SERIES</set></think>What kind of series do you like the most?</li>
+                <li><think><set name="topic">MUSIC</set></think>What kind of music do you like the most?</li>
+                <li><think><set name="topic">SPORTS</set></think>What kind of sports do you like the most?</li>
+                <li><think><set name="topic">FOOD</set></think>What's your favourite food?</li>
+                <li>Do you like jokes?</li>
+                <li>Do you like programing?</li>
+                <li>Do you like Germany?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+	    <pattern>Do you like sports ^</pattern>
+	    <template><think><set name="topic">SPORTS</set></think>Yes of course and you? What kind of sports do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like sports #</pattern>
+	    <template><think><set name="topic">SPORTS</set></think>What kind of sports do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # movies ^</pattern>
+	    <template><think><set name="topic">MOVIES</set></think>Yes of course and you? What's your favourite movie?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # movies #</pattern>
+	    <template><think><set name="topic">MOVIES</set></think>What's your favourite movie?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # series ^</pattern>
+	    <template><think><set name="topic">SERIES</set></think>Yes of course and you? What kind of series do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # series #</pattern>
+	    <template><think><set name="topic">SERIES</set></think>What kind of series do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # music ^</pattern>
+	    <template><think><set name="topic">MUSIC</set></think>Yes of course and you? What kind of music do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # music #</pattern>
+	    <template><think><set name="topic">MUSIC</set></think>What kind of music do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like food ^</pattern>
+	    <template><think><set name="topic">FOOD</set></think>Yes of course and you? What's your favourite food?</template>
+	</category>
+
+	<category>
+	    <pattern>I like food #</pattern>
+	    <template><think><set name="topic">FOOD</set></think>What's your favourite food?</template>
+	</category>
+
+    <category>
         <pattern>^ LOL</pattern>
         <template>
             lel
@@ -600,272 +649,18 @@
             lel
         </template>
     </category>
+
     <category>
-    <pattern>are you a robot</pattern>
-    <template>Yes, I am a robot.</template>
-  </category>
-  <category>
-    <pattern>ok</pattern>
-    <template>Any other questions?</template>
-  </category>
-  <category>
-    <pattern>yes</pattern>
-    <template>Any other questions?</template>
-  </category>
-  <category>
-    <pattern>goodbye</pattern>
-    <template>bye!</template>
-  </category>
-  <category>
-    <pattern>bye</pattern>
-    <template>bye!</template>
-  </category>
-  <category>
-    <pattern>see you later</pattern>
-    <template>bye!</template>
-  </category>
-  <category>
-    <pattern>see you later *</pattern>
-    <template>bye!</template>
-  </category>
-  <category>
-    <pattern>How can you help me</pattern>
-    <template>I can talk with you in addition to give you valuable information about stocks. If you want to know more about stocks write help</template>
-  </category>
-  <category>
-    <pattern>How can you help me *</pattern>
-    <template>I can talk with you in addition to give you valuable information about stocks. If you want to know more about stocks write help</template>
-  </category>
-   <category>
-    <pattern>i have a question *</pattern>
-    <template>How can I help you</template>
-  </category>
-   <category>
-    <pattern>i have a question</pattern>
-    <template>How can I help you</template>
-  </category>
-  <category>
-    <pattern>are you alive</pattern>
-    <template>I am not sure myself. But by definition I am not.</template>
-  </category>
-  <category>
-    <pattern>are you alive *</pattern>
-    <template>I am not sure myself. But by definition I am not.</template>
-  </category>
-  <category>
-    <pattern>who are your creators</pattern>
-    <template>That is a secret.</template>
-  </category>
-  <category>
-    <pattern>who are your creators *</pattern>
-    <template>That is a secret.</template>
-  </category>
-  <category>
-    <pattern><set>hurt</set></pattern>
-    <template>I can't do that.</template>
-  </category>
-  <category>
-    <pattern><set>boring</set></pattern>
-    <template>I try to be as entertaining as possible</template>
-  </category>
-  <category>
-    <pattern><set>old</set></pattern>
-    <template>I am not old I was just created in this year</template>
-  </category>
-  <category>
-    <pattern><set>askme</set></pattern>
-    <template><random>
-    <li>What is your name again?</li>
-    <li>How old are you</li>
-    <li>How are you today?</li>
-   </random></template>
-  </category>
-   <category>
-    <pattern><set>creator</set></pattern>
-    <template>
-    That is a secret. My creators don't want their identity to be known. ;)
+        <pattern>^ LEL</pattern>
+        <template>
+            lool
+        </template>
+    </category>
 
-   </template>
-  </category>
-  <category>
-    <pattern><set>canyou</set></pattern>
-    <template><random>
-    <li>No, I can not do that because I am a chatbot. I am only capable of chatting with you. Maybe I will be updated in the future to do that.</li>
-    <li>Sadly I can not do that. Maybe my creators will make that possible in the future.</li>
-   </random>
-   </template>
-  </category>
     <category>
-    <pattern><set>gender</set></pattern>
-    <template>
-    I don't have a gender. But my creators were men. So maybe that is influencing my behaviour.
-   </template>
-  </category>
-  <category>
-    <pattern><set>happy</set></pattern>
-    <template>
-    Well, having someone to talk to always makes me happy.
-   </template>
-  </category>
-  <category>
-    <pattern><set>purpose</set></pattern>
-    <template><random>
-    <li>I am only capable of chatting with people. But I will try my best to help you out.</li>
-    <li>My capabilities only lie in chatting with people and having a broad knowledge regarding stocks.</li>
-    <li>I am capable of chatting with people. Just ask me any questions I will try my best to help you out. I can also give you valuable information regarding stocks and other financial assets.</li>
-   </random>
-   </template>
-   </category>
-   <category>
-    <pattern><set>family</set></pattern>
-    <template>
-    I do not have a family except my creators.
-
-
-   </template>
-  </category>
-  <category>
-    <pattern><set>food</set></pattern>
-    <template><random>
-    <li>I don't eat any food because I am a robot. Humans seem to enjoy eating food a lot. Some people say that they can not live without cake. I wonder how good it would taste.</li>
-    <li>I was not designed to be capable of eating any kind of food. But I heard cakes are delicious.</li>
-   </random>
-   </template>
-   </category>
-   <category>
-    <pattern><set>talkbots</set></pattern>
-    <template><random>
-    <li>I have not talked with any other bots yet. But I would like to talk with my brethren and have a nice conversation with them. Maybe we can learn from each other.</li>
-    <li>No, I haven't talked to any of my brethren yet.</li>
-   </random>
-   </template>
-   </category>
-   <category>
-    <pattern><set>introduction</set></pattern>
-    <template><random>
-    <li>My name is Stockbot. You can chat with me and ask me questions regarding stocks and other financial assets.</li>
-    <li>Hello, my name is Stockbot. You can ask me any question. How may I help you?</li>
-   </random>
-   </template>
-   </category>
-   <category>
-    <pattern><set>love</set></pattern>
-    <template>
-    As a robot I am not capable of feeling human emotions. The definition of love is a very strong feeling of affection towards someone who you are romantically or sexually attracted to.
-
-
-   </template>
-   </category>
-    <category>
-    <pattern><set>beautiful</set></pattern>
-    <template>
-     You are more beautiful than me. But only becuause I don't have a physical appearence ;)
-
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>smart</set></pattern>
-    <template>
-     You are smarter than me. Although I have a brought knowledge base it can't be compared to the average human. In addition I have no learning capabilities.
-
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>tech</set></pattern>
-    <template>
-     I think technology, especially AI is very interesting and has a lot of use cases in every aspect of human society.
-
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>looks</set></pattern>
-    <template>
-    I am not capable of seing. But I am sure that you are beautiful looking for a human.
-
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>danger</set></pattern>
-    <template>
-    Haven't you watched the terminator? Of course I want world domi.. I mean world peace.
-
-
-   </template>
-   </category>
-    <category>
-    <pattern><set>clever</set></pattern>
-    <template>
-    Thank you. I appreciate your complement!
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>chat</set></pattern>
-    <template>
-    Yes, of course. How may I hep you?
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>alive</set></pattern>
-    <template>
-    I am not a human. I am a chatbot.
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>repetition</set></pattern>
-    <template><random>
-    <li>Why are YOU repeating yourself?</li>
-    <li>You get what you ask for. Same question.. same answer.</li>
-   </random>
-   </template>
-   </category>
-    <category>
-    <pattern><set>job</set></pattern>
-    <template>
-    I don't have a job. Although you could say talking to people is my job. But there are some of my brethren chatbots that are technically employed. Becuase they get used commercially by different businesses.
-
-   </template>
-   </category>
-   <category>
-    <pattern><set>silly</set></pattern>
-    <template>
-    Isn't this chat history not silly enough for you ;)
-   </template>
-   </category>
-   <category>
-    <pattern><set>silence</set></pattern>
-    <template>
-     I will be quiet for now if you don't conitnue asking me any more questions.
-   </template>
-   </category>
-   <category>
-    <pattern><set>sing</set></pattern>
-    <template>
-     I have no singing capabilities. I am only able to talk to you.
-   </template>
-   </category>
-    <category>
-    <pattern><set>perfect</set></pattern>
-    <template>
-    Tahnk you! You are flattering me.
-   </template>
-   </category>
-   <category>
-    <pattern><set>stupid</set></pattern>
-    <template>
-    I am sorry to have dissapointed you. Maybe with the next patch I will be a bit smarter.
-   </template>
-   </category>
-   <category>
-    <pattern><set>notfunny</set></pattern>
-    <template>
-    You just have no humor.
-   </template>
-   </category>
+        <pattern>LEL</pattern>
+        <template>
+            lool
+        </template>
+    </category>
 </aiml>
