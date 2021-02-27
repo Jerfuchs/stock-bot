@@ -110,7 +110,7 @@
     </category>
 
     <category>
-        <pattern>ERZÄHL MIR NEN INFORMATIKERWITZ ^</pattern>
+        <pattern>ERZÄHL MIR N INFORMATIKERWITZ ^</pattern>
         <template>
             <random>
                 <li>Was sind acht Hobbits? Ein Hobbyte!</li>
