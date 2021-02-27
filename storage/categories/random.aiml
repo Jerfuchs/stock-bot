@@ -497,11 +497,39 @@
         </template>
     </category>
 
+     <category>
+        <pattern>WHAT IS YOUR NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">My name is stockbot and yours?</li>
+                <li>My name is stockbot</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># IS YOUR NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">My name is stockbot and yours?</li>
+                <li>My name is stockbot</li>
+            </condition>
+        </template>
+    </category>
+
     <category>
         <pattern>HOW OLD ARE YOU #</pattern>
         <template>
             <think><set name="topic">AGE</set></think>
-            I am 22 years old and you?
+            I was created in 2021 and you?
+        </template>
+    </category>
+
+    <category>
+        <pattern># YOUR AGE #</pattern>
+        <template>
+            <think><set name="topic">AGE</set></think>
+            I was created in 2021 and you?
         </template>
     </category>
 
@@ -527,7 +555,7 @@
         <pattern>WIE ALT BIST DU #</pattern>
         <template>
             <think><set name="topic">AGE</set></think>
-            I am 22 years old and you?
+            I was created in 2021 and you?
         </template>
     </category>
 
