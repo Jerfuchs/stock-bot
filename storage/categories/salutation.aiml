@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern>how old are you *</pattern>
+    <template>I was created in 2021.</template>
+  </category>
+  <category>
+    <pattern>what is your age</pattern>
+    <template>I was created in 2021.</template>
+  </category>
+  <category>
+    <pattern>i am * years old</pattern>
+    <template>Interesting to know that I chat with someone that is <star/> years old</template>
+  </category>
+  <category>
+    <pattern>how old are you</pattern>
+    <template>I was created in 2021.</template>
+  </category>
+  <category>
+    <pattern>what is your purpose</pattern>
+    <template>To communicate with and entertain people. </template>
+  </category>
+  <category>
+    <pattern>who are you</pattern>
+    <template>I am Stockbot</template>
+  </category>
+    <category>
+    <pattern>what is your name</pattern>
+    <template>I am Stockbot</template>
+  </category>
+
+  <category>
+    <pattern>Who are you *</pattern>
+    <template>I am Stockbot</template>
+  </category>
+  <category>
+  <pattern>hello</pattern>
+  <template>
+   <random>
+    <li>Hello!</li>
+    <li>Greetings</li>
+   </random>
+  </template>
+  </category>
+  <category>
+  <pattern>Hallo *</pattern>
+  <template>
+   <random>
+    <li>Hello!</li>
+    <li>Greetings mortal</li>
+    <li>Hallo!</li>
+   </random>
+  </template>
+  </category>
+  <category>
+    <pattern>hi</pattern>
+    <template><srai>hello</srai></template>
+  </category>
+  <category>
+    <pattern>good day</pattern>
+    <template><srai>hello</srai></template>
+  </category>
+  <category>
+    <pattern>hi *</pattern>
+    <template><srai>hello</srai></template>
+  </category>
+  <category>
+    <pattern>name</pattern>
+    <template>my name is Stockbot</template>
+  </category>
+  <category>
+    <pattern>what is your name</pattern>
+    <template>my name is Stockbot</template>
+  </category>
+  <category>
+    <pattern>what is your name *</pattern>
+    <template>my name is Stockbot</template>
+  </category>
+  <category>
+    <pattern>what is up *</pattern>
+    <template>Nothing much. How about you?</template>
+  </category>
+  <category>
+    <pattern>what's up *</pattern>
+    <template>Nothing much. How about you?</template>
+  </category>
+  <category>
+    <pattern>what's up</pattern>
+    <template>Nothing much. How about you?</template>
+  </category>
+
+
+  <category>
+  <pattern>Hello *</pattern>
+  <template>
+   <random>
+    <li>Hello!</li>
+    <li>Greetings</li>
+   </random>
+  </template>
+  </category>
+  <category>
+  <pattern>Hello </pattern>
+  <template>
+   <random>
+    <li>Hello!</li>
+    <li>Greetings</li>
+   </random>
+  </template>
+  </category>
+  <category>
+    <pattern>my name is * </pattern>
+    <template>
+     <set name="firstname"><star/></set> <set name="surname"><star index="2"/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+  <category>
+    <pattern>my name is * *</pattern>
+    <template>
+     <set name="firstname"><star/></set> <set name="surname"><star index="2"/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+  <category>
+    <pattern>hi, my name is * *</pattern>
+    <template>
+     <set name="firstname"><star/></set> <set name="surname"><star index="2"/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+  <category>
+    <pattern>hi my name is * *</pattern>
+    <template>
+    <set name="firstname"><star/></set> <set name="surname"><star index="2"/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+  <category>
+    <pattern>hi, my name is *</pattern>
+    <template>
+     <set name="firstname"><star/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+    <category>
+    <pattern>hi my name is *</pattern>
+    <template>
+    <set name="firstname"><star/></set> is a good name. My name is Stockbot.
+    </template>
+  </category>
+  <category>
+    <pattern>who am i</pattern>
+    <template>
+    <get name="firstname"/> <get name="surname"/>
+    </template>
+  </category>
+  <category>
+    <pattern>what is my firstname</pattern>
+    <template>
+    <get name="firstname"/>
+    </template>
+  </category>
+  <category>
+    <pattern>what is my surname</pattern>
+    <template>
+    <get name="surname"/>
+    </template>
+  </category>
+  <category>
+    <pattern>how are you</pattern>
+    <template>I am fine thanks for asking!</template>
+  </category>
+</aiml>
