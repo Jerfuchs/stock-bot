@@ -3,8 +3,8 @@ from datetime import datetime
 import pandas as pd
 import json
 
-start_index = 4
-end_index = 7
+start_index = 5
+end_index = 8
 
 
 def get_LastPrice(stock): #Dataframe
@@ -140,7 +140,9 @@ def get_trailingPE(stock): #Dataframe
 
 
 def get_api_answer(userinput, botanswer):
-    ticker = userinput[start_index:end_index].upper()
+    #temp = userinput.split(" ")
+    #print(temp)
+    ticker = userinput.split(" ")[1].upper()
 
     if "price" in userinput:
         try:

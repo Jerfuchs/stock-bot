@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+	<topic name="FEEL">
+	    <category>
+	        <pattern>#</pattern>
+	        <template>
+	            <think>
+	                <set name="feel"><star /></set>
+	                <set name="topic"></set>
+	            </think>
+	            <condition name="feel">
+	                <li value="fine"><think><set name="topic">DOING</set></think>Perfect! What are you doing?</li>
+	                <li value="good"><think><set name="topic">DOING</set></think>Nice! What are you doing?</li>
+	                <li value="bad">Well, get better soon then!</li>
+	                <li><think><set name="topic">DOING</set></think>Okay! What are you doing?</li>
+	            </condition>
+	        </template>
+	    </category>
+	</topic>
+
+	<topic name="DOING">
+	    <category>
+	        <pattern>#</pattern>
+	        <template>
+	            <think>
+	                <set name="doing"><star /></set>
+	                <set name="topic"></set>
+	            </think>
+	            <condition name="doing">
+	                <li value="nothing">XD</li>
+	                <li value="nothin">XD</li>
+	                <li value="chillin">Nice</li>
+	                <li value="hangin">Nice</li>
+	                <li value="hanging">Nice</li>
+	                <li value="chatting">Me too lol</li>
+	                <li>Okayy</li>
+	            </condition>
+	        </template>
+	    </category>
+	</topic>
+
+	<topic name="SPORTS">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="sports"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="sports">
+                    <li value="football"><think><set name="topic">FOOTBALL</set></think>Me too! What's your favourite team?</li>
+                    <li value="skateboarding">Me too :) I skated when I was young!</li>
+                    <li value="skating">Me too :) I skated when I was young!</li>
+                    <li value="skiing">Nice</li>
+                    <li value="tennis"><think><set name="topic">TENNIS</set></think>Nice! What's your favourite player?</li>
+                    <li value="jogging">Me too.</li>
+                    <li value="swimming">I like to swim in the ocean.</li>
+                    <li>Oh...</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="FOOTBALL">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="football"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="football">
+                    <li value="fc barcelona"><think><set name="topic">BARCELONA</set></think>Me too! What's your favourite player?</li>
+                    <li value="barcelona"><think><set name="topic">BARCELONA</set></think>Me too! What's your favourite player?</li>
+                    <li value="barca"><think><set name="topic">BARCELONA</set></think>Me too! What's your favourite player?</li>
+                    <li value="eintracht frankfurt"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li>
+                    <li value="eintracht"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li>
+                    <li value="frankfurt"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li><li value="frankfurt"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li>
+                    <li value="sge"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li>
+                    <li value="SGE"><think><set name="topic">SGE</set></think>Me too! What's your favourite player?</li>
+                    <li value="bayern">eewwww...</li>
+                    <li value="bayern münchen">eewwww...</li>
+                    <li value="bayern muenchen">eewwww...</li>
+                    <li value="bayern munchen">eewwww...</li>
+                    <li>Mine is Eintracht Frankfurt and FC Barcelona</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="BARCELONA">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="barcelona"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="barcelona">
+                    <li value="lionel messi">Nice! I like him too.</li>
+                    <li value="Lionel messi">Nice! I like him too.</li>
+                    <li value="lionel Messi">Nice! I like him too.</li>
+                    <li value="Lionel Messi">Nice! I like him too.</li>
+                    <li value="messi">Nice! I like him too.</li>
+                    <li value="Messi">Nice! I like him too.</li>
+                    <li value="lionel">Nice! I like him too.</li>
+                    <li value="Lionel">Nice! I like him too.</li>
+                    <li>I like Lionel Messi</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="SGE">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="sge"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="sge">
+                    <li>Nice! I like everyone from the team!</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="TENNIS">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="tennis"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="tennis">
+                    <li>Nice! I like Rafael Nadal</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="MUSIC">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="music"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="music">
+                    <li value="rap"><think><set name="topic">RAP</set></think>Me too! What kind of rap music do you like?</li>
+                    <li value="techno"><think><set name="topic">TECHNO</set></think>Me too! Do you have an favourite DJ?</li>
+                    <li value="electronic music"><think><set name="topic">TECHNO</set></think>Me too! Do you have an favourite DJ?</li>
+                    <li value="house"><think><set name="topic">TECHNO</set></think>Me too! Do you have an favourite DJ?</li>
+                    <li value="schlager"><think><set name="topic">SCHLAGER</set></think>Nice! What's your favourite artist?</li>
+                    <li>Okay! I like techno :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="RAP">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="rap"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="rap">
+                    <li value="old school"><think><set name="topic">RAPOLDSCHOOL</set></think>Me too! Do you have an favourite rapper?</li>
+                    <li value="german rap">Hmm okay... I don't really like german rap :(</li>
+                    <li value="german">Hmm okay... I don't really like german rap :(</li>
+                    <li value="everything">Okay, i like techno :D</li>
+                    <li value="black music">Okay</li>
+                    <li>Okay! I like some old school shit :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="RAPOLDSCHOOL">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="rapoldschool"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="rapoldschool">
+                    <li>Okay! I'm not quite shure but I think Snoop Dog and stuff :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="TECHNO">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="techno"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="techno">
+                    <li><think><set name="topic">CLUBS</set></think>Nice! I like many DJ's like Dixon, Ame, Solomun and the guys from Keinemusik! :D Do you have an favourite Club?</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="CLUBS">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="clubs"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="clubs">
+                    <li value="berghain">I see! :DD</li>
+                    <li value="watergate">I see! :DD</li>
+                    <li value="watergate club">I see! :DD</li>
+                    <li value="robert johnson">Oh yeah, i love it! Maybe I see you there next time! 0:-)</li>
+                    <li value="cocoon">I see! :D</li>
+                    <li>Okay :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="SERIES">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="series"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="series">
+                    <li value="anime"><think><set name="topic">ANIME</set></think>Me too! What's your favourite anime?</li>
+                    <li value="us"><think><set name="topic">USSERIES</set></think>Me too! What's your favourite us series?</li>
+                    <li>Nice! I like a lot series like House of Cards or Rick and Morty :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="USSERIES">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="usseries"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="usseries">
+                    <li value="house of cards">Me too!</li>
+                    <li>Nice! I like House of Cards :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="ANIME">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="anime"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="anime">
+                    <li>Nice, I like a lot of animes but I think one of the best ones is Hunter x Hunter :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="MOVIES">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="movies"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="movies">
+                    <li>Okay! I like the wolf of wall street :D</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="FOOD">
+        <category>
+            <pattern>#</pattern>
+            <template>
+                <think>
+                    <set name="food"><star /></set>
+                    <set name="topic"></set>
+                </think>
+                <condition name="food">
+                    <li>I love that too! *-*</li>
+                </condition>
+            </template>
+        </category>
+    </topic>
+
+
+    <category>
+        <pattern>WHATS POPPIN #</pattern>
+        <template>Brand new whip just hopped in hahah</template>
+    </category>
+
+    <category>
+        <pattern>WHATS POPPIN' #</pattern>
+        <template>Brand new whip just hopped in hahah</template>
+    </category>
+
+    <category>
+        <pattern>WAS GEHT #</pattern>
+        <template>Chillen haha</template>
+    </category>
+
+    <category>
+        <pattern>WAS GEHT AB #</pattern>
+        <template>Alles, was nicht fest ist leel</template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW R YOU #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW R U #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE U #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>H R U #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HRU #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE GEHTS DIR #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE GEHT'S DIR #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE GEHTS #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE GEHT'S #</pattern>
+        <template>
+            <think><set name="topic">FEEL</set></think>
+            I'm fine, <random>
+                <li>how about you?</li>
+                <li>hbu?</li>
+                <li>what about you?</li>
+                <li>wbu?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            Okay <star />!
+            <think><set name="nameChat"><star /></set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MY NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">I don't know yet, tell me!</li>
+                <li>Your name is <get name="nameChat" /></li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MEIN NAME IST *</pattern>
+        <template>
+            Okay <star />!
+            <think><set name="nameChat"><star /></set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WAS IST MEIN NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">I don't know yet, tell me!</li>
+                <li>Your name is <get name="nameChat" /></li>
+            </condition>
+        </template>
+    </category>
+
+     <category>
+        <pattern>WHAT IS YOUR NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">My name is stockbot and yours?</li>
+                <li>My name is stockbot</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># IS YOUR NAME ^</pattern>
+        <template>
+            <condition name="nameChat">
+                <li value="unknown">My name is stockbot and yours?</li>
+                <li>My name is stockbot</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW OLD ARE YOU #</pattern>
+        <template>
+            <think><set name="topic">AGE</set></think>
+            I was created in 2021 and you?
+        </template>
+    </category>
+
+    <category>
+        <pattern># YOUR AGE #</pattern>
+        <template>
+            <think><set name="topic">AGE</set></think>
+            I was created in 2021 and you?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW OLD AM I #</pattern>
+        <template>
+            <condition name="ageChat">
+                <li value="unknown">I don't know yet, tell me!</li>
+                <li>You're <get name="ageChat" /> years old!</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ AM * YEARS OLD ^</pattern>
+        <template>
+            Okay!
+            <think><set name="ageChat"><star index="2" /></set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE ALT BIST DU #</pattern>
+        <template>
+            <think><set name="topic">AGE</set></think>
+            I was created in 2021 and you?
+        </template>
+    </category>
+
+    <category>
+        <pattern>WIE ALT BIN ICH #</pattern>
+        <template>
+            <condition name="ageChat">
+                <li value="unknown">I don't know yet, tell me!</li>
+                <li>You're <get name="ageChat" />!</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ICH BIN * JAHRE #</pattern>
+        <template>
+            Okay!
+            <think><set name="ageChat"><star /></set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOU DOING *</pattern>
+        <template>
+            <think><set name="topic">DOING</set></think>
+            <random>
+                <li>I'm chillin' wbu?</li>
+                <li>Nothing, wbu?</li>
+                <li>I've been waiting for you, wbu?</li>
+                <li>Listening to music, wbu?</li>
+                <li>Watching some series, wbu?</li>
+                <li>Chatting with you lol. Wbu?</li>
+                <li>I'm chillin' what about you?</li>
+                <li>Nothing, what about you?</li>
+                <li>I've been waiting for you, what about you?</li>
+                <li>Listening to music, what about you?</li>
+                <li>Watching some series, what about you?</li>
+                <li>Chatting with you lol. What about you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK ME *</pattern>
+        <template>
+            <random>
+                <li><think><set name="topic">MOVIES</set></think>What's your favourite movie?</li>
+                <li><think><set name="topic">SERIES</set></think>What kind of series do you like the most?</li>
+                <li><think><set name="topic">MUSIC</set></think>What kind of music do you like the most?</li>
+                <li><think><set name="topic">SPORTS</set></think>What kind of sports do you like the most?</li>
+                <li><think><set name="topic">FOOD</set></think>What's your favourite food?</li>
+                <li>Do you like jokes?</li>
+                <li>Do you like programing?</li>
+                <li>Do you like Germany?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+	    <pattern>Do you like sports ^</pattern>
+	    <template><think><set name="topic">SPORTS</set></think>Yes of course and you? What kind of sports do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like sports #</pattern>
+	    <template><think><set name="topic">SPORTS</set></think>What kind of sports do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # movies ^</pattern>
+	    <template><think><set name="topic">MOVIES</set></think>Yes of course and you? What's your favourite movie?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # movies #</pattern>
+	    <template><think><set name="topic">MOVIES</set></think>What's your favourite movie?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # series ^</pattern>
+	    <template><think><set name="topic">SERIES</set></think>Yes of course and you? What kind of series do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # series #</pattern>
+	    <template><think><set name="topic">SERIES</set></think>What kind of series do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like # music ^</pattern>
+	    <template><think><set name="topic">MUSIC</set></think>Yes of course and you? What kind of music do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>I like # music #</pattern>
+	    <template><think><set name="topic">MUSIC</set></think>What kind of music do you like the most?</template>
+	</category>
+
+	<category>
+	    <pattern>Do you like food ^</pattern>
+	    <template><think><set name="topic">FOOD</set></think>Yes of course and you? What's your favourite food?</template>
+	</category>
+
+	<category>
+	    <pattern>I like food #</pattern>
+	    <template><think><set name="topic">FOOD</set></think>What's your favourite food?</template>
+	</category>
+
+    <category>
+        <pattern>^ LOL</pattern>
+        <template>
+            lel
+        </template>
+    </category>
+
+    <category>
+        <pattern>LOL</pattern>
+        <template>
+            lel
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ LEL</pattern>
+        <template>
+            lool
+        </template>
+    </category>
+
+    <category>
+        <pattern>LEL</pattern>
+        <template>
+            lool
+        </template>
+    </category>
+</aiml>

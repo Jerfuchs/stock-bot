@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+    <pattern>is <set> <get name="firstname"/>male</set> a male name</pattern>
+    <template>Yes it is</template>
+ </category>
+ <category>
+    <pattern>is <set>female</set> a female name</pattern>
+    <template>Yes it is</template>
+ </category>
+ <category>
+    <pattern>am i a boy or a girl</pattern>
+    <template>please write your name</template>
+ </category>
+ <category>
+    <pattern>am i a boy or a girl *</pattern>
+    <template>please write your name</template>
+ </category>
+ <category>
+    <pattern>am i a boy or a girl *</pattern>
+    <template>please write your name</template>
+ </category>
+ <category>
+    <pattern><set>female</set></pattern>
+    <template>This is a girls name.</template>
+ </category>
+ <category>
+    <pattern><set>male</set></pattern>
+    <template>This is a boys name.</template>
+ </category>
+</aiml>

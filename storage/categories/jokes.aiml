@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>TELL ME A JOKE ^</pattern>
+        <template>
+            <random>
+                <li>Was machen Pilze auf einer Pizza? Als Belag funghieren.</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Als ich hörte, dass Sauerstoff und Magnesium was miteinander haben, dachte ich nur: „OMg“.</li>
+                <li>Ein Römer geht in die Bar, streckt zwei Finger aus und sagt: „Fünf Bier bitte!“</li>
+                <li>Kommt ein Neutron in eine Bar. Sagt der Türsteher: „Sorry – nur für geladene Gäste!“</li>
+                <li>Ein älteres Ehepaar sitzen zusammen im Restaurant. <br />Auf einmal bekleckert sich die Frau mit Soße und sagt: „Oh nein, schau mal was für ein Rindvieh ich bin.” <br />Da sagt der Mann: „Und bekleckert bist du auch noch.”</li>
+                <li>Bei einer Straßenkontrolle: Führerschein bitte! <br />Fahrer: Wie jetzt, den habe ich euch doch schon vor 2 Monaten gegeben und nie wiederbekommen. Habt ihn wohl verloren, was?</li>
+                <li>Wenn Kinder zur Schule gehen, wo sitzen die dann? <br />Nirgendwo, die gehen ja noch.</li>
+                <li>Gehen zwei Eskimos nach Hause. <br />Fragt der eine den anderen: "Wo ist eigentlich dein Iglu?" <br />Erschrickt der andere: "Oh nein, ich hab' das Bügeleisen angelassen!" </li>
+                <li>I once dated a Macbook. It didn’t work because he was all, "I this" and "I that".</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR EINEN WITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was machen Pilze auf einer Pizza? Als Belag funghieren.</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Als ich hörte, dass Sauerstoff und Magnesium was miteinander haben, dachte ich nur: „OMg“.</li>
+                <li>Ein Römer geht in die Bar, streckt zwei Finger aus und sagt: „Fünf Bier bitte!“</li>
+                <li>Kommt ein Neutron in eine Bar. Sagt der Türsteher: „Sorry – nur für geladene Gäste!“</li>
+                <li>Ein älteres Ehepaar sitzen zusammen im Restaurant. <br />Auf einmal bekleckert sich die Frau mit Soße und sagt: „Oh nein, schau mal was für ein Rindvieh ich bin.” <br />Da sagt der Mann: „Und bekleckert bist du auch noch.”</li>
+                <li>Bei einer Straßenkontrolle: Führerschein bitte! <br />Fahrer: Wie jetzt, den habe ich euch doch schon vor 2 Monaten gegeben und nie wiederbekommen. Habt ihn wohl verloren, was?</li>
+                <li>Wenn Kinder zur Schule gehen, wo sitzen die dann? <br />Nirgendwo, die gehen ja noch.</li>
+                <li>Gehen zwei Eskimos nach Hause. <br />Fragt der eine den anderen: "Wo ist eigentlich dein Iglu?" <br />Erschrickt der andere: "Oh nein, ich hab' das Bügeleisen angelassen!" </li>
+                <li>I once dated a Macbook. It didn’t work because he was all, "I this" and "I that".</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR NEN WITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was machen Pilze auf einer Pizza? Als Belag funghieren.</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Als ich hörte, dass Sauerstoff und Magnesium was miteinander haben, dachte ich nur: „OMg“.</li>
+                <li>Ein Römer geht in die Bar, streckt zwei Finger aus und sagt: „Fünf Bier bitte!“</li>
+                <li>Kommt ein Neutron in eine Bar. Sagt der Türsteher: „Sorry – nur für geladene Gäste!“</li>
+                <li>Ein älteres Ehepaar sitzen zusammen im Restaurant. <br />Auf einmal bekleckert sich die Frau mit Soße und sagt: „Oh nein, schau mal was für ein Rindvieh ich bin.” <br />Da sagt der Mann: „Und bekleckert bist du auch noch.”</li>
+                <li>Bei einer Straßenkontrolle: Führerschein bitte! <br />Fahrer: Wie jetzt, den habe ich euch doch schon vor 2 Monaten gegeben und nie wiederbekommen. Habt ihn wohl verloren, was?</li>
+                <li>Wenn Kinder zur Schule gehen, wo sitzen die dann? <br />Nirgendwo, die gehen ja noch.</li>
+                <li>Gehen zwei Eskimos nach Hause. <br />Fragt der eine den anderen: "Wo ist eigentlich dein Iglu?" <br />Erschrickt der andere: "Oh nein, ich hab' das Bügeleisen angelassen!" </li>
+                <li>I once dated a Macbook. It didn’t work because he was all, "I this" and "I that".</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR N WITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was machen Pilze auf einer Pizza? Als Belag funghieren.</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Als ich hörte, dass Sauerstoff und Magnesium was miteinander haben, dachte ich nur: „OMg“.</li>
+                <li>Ein Römer geht in die Bar, streckt zwei Finger aus und sagt: „Fünf Bier bitte!“</li>
+                <li>Kommt ein Neutron in eine Bar. Sagt der Türsteher: „Sorry – nur für geladene Gäste!“</li>
+                <li>Ein älteres Ehepaar sitzen zusammen im Restaurant. <br />Auf einmal bekleckert sich die Frau mit Soße und sagt: „Oh nein, schau mal was für ein Rindvieh ich bin.” <br />Da sagt der Mann: „Und bekleckert bist du auch noch.”</li>
+                <li>Bei einer Straßenkontrolle: Führerschein bitte! <br />Fahrer: Wie jetzt, den habe ich euch doch schon vor 2 Monaten gegeben und nie wiederbekommen. Habt ihn wohl verloren, was?</li>
+                <li>Wenn Kinder zur Schule gehen, wo sitzen die dann? <br />Nirgendwo, die gehen ja noch.</li>
+                <li>Gehen zwei Eskimos nach Hause. <br />Fragt der eine den anderen: "Wo ist eigentlich dein Iglu?" <br />Erschrickt der andere: "Oh nein, ich hab' das Bügeleisen angelassen!" </li>
+                <li>I once dated a Macbook. It didn’t work because he was all, "I this" and "I that".</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TELL ME A COMPUTER SCIENCE JOKE ^</pattern>
+        <template>
+            <random>
+                <li>Was sind acht Hobbits? Ein Hobbyte!</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Die Windows Problembehandlung konnte auf Grund eines Problems nicht gestartet werden.</li>
+                <li>Windows</li>
+                <li>Linux wird nie das meistinstallierte Betriebssystem sein, wenn man bedenkt, wie oft man Windows neu installieren muss!</li>
+                <li>Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google</li>
+                <li>Ein Informatiker schiebt einen Kinderwagen durch den Park. Kommt ein älteres Ehepaar: „Junge oder Mädchen?“ <br />Informatiker: „Richtig!“</li>
+                <li>IT Support: Machen Sie mal bitte alle Fenster zu. User: Auch das im Bad?</li>
+                <li>Ruft eine Person beim PC-Support an und sagt: „Ich nutze Windows.“ <br />„…Und?“ „Und ich habe ein Problem.“ <br />„Das sagten sie bereits.“</li>
+                <li>Immer, wenn jemand „Eigene Dateien“ anklickt, fällt irgendwo ein NSA-Mitarbeiter lachend vom Stuhl</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR EINEN INFORMATIKERWITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was sind acht Hobbits? Ein Hobbyte!</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Die Windows Problembehandlung konnte auf Grund eines Problems nicht gestartet werden.</li>
+                <li>Windows</li>
+                <li>Linux wird nie das meistinstallierte Betriebssystem sein, wenn man bedenkt, wie oft man Windows neu installieren muss!</li>
+                <li>Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google</li>
+                <li>Ein Informatiker schiebt einen Kinderwagen durch den Park. Kommt ein älteres Ehepaar: „Junge oder Mädchen?“ <br />Informatiker: „Richtig!“</li>
+                <li>IT Support: Machen Sie mal bitte alle Fenster zu. User: Auch das im Bad?</li>
+                <li>Ruft eine Person beim PC-Support an und sagt: „Ich nutze Windows.“ <br />„…Und?“ „Und ich habe ein Problem.“ <br />„Das sagten sie bereits.“</li>
+                <li>Immer, wenn jemand „Eigene Dateien“ anklickt, fällt irgendwo ein NSA-Mitarbeiter lachend vom Stuhl</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR N INFORMATIKERWITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was sind acht Hobbits? Ein Hobbyte!</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Die Windows Problembehandlung konnte auf Grund eines Problems nicht gestartet werden.</li>
+                <li>Windows</li>
+                <li>Linux wird nie das meistinstallierte Betriebssystem sein, wenn man bedenkt, wie oft man Windows neu installieren muss!</li>
+                <li>Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google</li>
+                <li>Ein Informatiker schiebt einen Kinderwagen durch den Park. Kommt ein älteres Ehepaar: „Junge oder Mädchen?“ <br />Informatiker: „Richtig!“</li>
+                <li>IT Support: Machen Sie mal bitte alle Fenster zu. User: Auch das im Bad?</li>
+                <li>Ruft eine Person beim PC-Support an und sagt: „Ich nutze Windows.“ <br />„…Und?“ „Und ich habe ein Problem.“ <br />„Das sagten sie bereits.“</li>
+                <li>Immer, wenn jemand „Eigene Dateien“ anklickt, fällt irgendwo ein NSA-Mitarbeiter lachend vom Stuhl</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ERZÄHL MIR NEN INFORMATIKERWITZ ^</pattern>
+        <template>
+            <random>
+                <li>Was sind acht Hobbits? Ein Hobbyte!</li>
+                <li>Haben Sie schon von der neuen Band 1023 MB gehört? Die hatten noch keine Gigs.</li>
+                <li>Die Windows Problembehandlung konnte auf Grund eines Problems nicht gestartet werden.</li>
+                <li>Windows</li>
+                <li>Linux wird nie das meistinstallierte Betriebssystem sein, wenn man bedenkt, wie oft man Windows neu installieren muss!</li>
+                <li>Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google</li>
+                <li>Ein Informatiker schiebt einen Kinderwagen durch den Park. Kommt ein älteres Ehepaar: „Junge oder Mädchen?“ <br />Informatiker: „Richtig!“</li>
+                <li>IT Support: Machen Sie mal bitte alle Fenster zu. User: Auch das im Bad?</li>
+                <li>Ruft eine Person beim PC-Support an und sagt: „Ich nutze Windows.“ <br />„…Und?“ „Und ich habe ein Problem.“ <br />„Das sagten sie bereits.“</li>
+                <li>Immer, wenn jemand „Eigene Dateien“ anklickt, fällt irgendwo ein NSA-Mitarbeiter lachend vom Stuhl</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>
