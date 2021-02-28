@@ -18,3 +18,19 @@
     <pattern>HOW MANY CITIES DOES * HAS</pattern>
     <template><star/></template>
 </category>
+
+<category>
+    <pattern>HOW MANY CITIES DOES * HAVE</pattern>
+    <template><star/></template>
+</category>
+
+<category>
+    <pattern>HOW MANY CITIZEN DOES * HAS</pattern>
+    <template><star/></template>
+</category>
+
+
+<category>
+    <pattern>HOW MANY CITIZEN DOES * HAVE</pattern>
+    <template><star/></template>
+</category>

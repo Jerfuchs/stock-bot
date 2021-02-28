@@ -36,3 +36,15 @@ def get_sparql_answer(userinput, botanswer):
 
         botanswer = str(answer)
         return botanswer
+
+    elif 'HOW MANY CITIZEN DOES' in userinput:
+        try:
+            country = str(botanswer)
+            query   = ' SELECT COUNT(?city) WHERE { ?city dbo: country  dbr: ' + country + '. ?city rdf: type dbo: City. } '
+            answer  = execute_sparql(query)
+        except:
+            answer = 'SPARQL Request failed.'
+            return ''
+
+        botanswer = str(answer)
+        return botanswer
