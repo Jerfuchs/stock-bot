@@ -29,7 +29,8 @@ async def talk(ctx):
     if ctx.author.bot:  # If statement so the bot doesn't message itself
         return
 
-    command = translator.translate(ctx.clean_content, lang_src="de", lang_tgt="en")
+    language = translator.detect(ctx.clean_content)[0]
+    command = translator.translate(ctx.clean_content, lang_src=language, lang_tgt="en")
     answer = stock_bot.ask_question(command)
     if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
         answer = 'I dont know what you mean'
@@ -39,7 +40,7 @@ async def talk(ctx):
     if "get" in answer:
         answer = get_api_answer(command, answer)
 
-    answer = translator.translate(answer, lang_src="en", lang_tgt="de")
+    answer = translator.translate(answer, lang_src="en", lang_tgt=language)
     await channel.send(answer)  # Text to speech is that the bot speaks out loud ,tts=True
 
 

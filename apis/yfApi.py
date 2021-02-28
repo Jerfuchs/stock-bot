@@ -150,7 +150,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer ="It is: " + str(apidata)
+        botanswer ="It is: " + str(apidata) + " $"
         return botanswer
 
     elif "website" in userinput:
@@ -168,7 +168,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "market open" in userinput:
@@ -177,7 +177,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "200 avaerage" in userinput:
@@ -186,7 +186,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "volume" in userinput:
@@ -204,7 +204,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "regular low" in userinput:
@@ -213,7 +213,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "currency" in userinput:
@@ -240,7 +240,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "year low" in userinput:
@@ -249,7 +249,7 @@ def get_api_answer(userinput, botanswer):
         except:
             return "No data could be found"
 
-        botanswer = "It is: " + str(apidata)
+        botanswer = "It is: " + str(apidata) + " $"
         return botanswer
 
     elif "market cap" in userinput:

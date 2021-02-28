@@ -1,10 +1,9 @@
 import speech_recognition as sr
 import pyttsx3
 from google_trans_new import google_translator
-from gtts import gTTS
-import playsound
 from programy.clients.embed.datafile import EmbeddedDataFileBot
 from config.config import *
+from apis.yfApi import *
 
 translator = google_translator()
 stock_bot = EmbeddedDataFileBot(files, defaults=True)  # Bot initialised/ Extend to Stock Bot
@@ -18,10 +17,11 @@ engine.setProperty("voice", voices[4].id) #Default (Deutsch)
 
 
 def talk(text):
-    response = stock_bot.ask_question(text)
+    response = get_api_answer(text, stock_bot.ask_question(text))
     # my_bot.wait_and_answer()
     response = translator.translate(response,lang_src="en",lang_tgt="de")
-    if(str(response) != "None"):
+    print(response)
+    if(str(response) != "Keiner"):
         engine.say(response)
         print("Bot: ", response)
         engine.runAndWait()
@@ -39,6 +39,7 @@ def get_command():
             command = listener.recognize_google(voice, language='de-DE')
             print("User: ", command)
             command = translator.translate(str(command),lang_src="de",lang_tgt="en")
+            print(get_api_answer(command, command))
     except Exception as e:
         print(str(e))
         fallback()
