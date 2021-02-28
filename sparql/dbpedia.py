@@ -18,7 +18,8 @@ class DBpedia:
 		sparql.setQuery(q)
 		sparql.setReturnFormat(JSON) # set the format to json
 		qres = sparql.query().convert() # convert it to json
-		return qres	
+		return qres
+
 	def askDbpedia(self, question):	
 		print()
 		if  question.lower() == "who is the owner of tesla?".lower():
@@ -166,4 +167,53 @@ class DBpedia:
 			for result in result_obj["results"]["bindings"]: # parse the json object to return the specified data
 				obj = result['label']['value']
 				return obj
-		return "Not Found"			
+		return "Not Found"
+
+	def get_sparql_answer(userinput, botanswer):
+
+		if 'HOW MANY CITIES DOES' in userinput:
+			try:
+				country = str(botanswer)
+				query = ' SELECT COUNT (?city) WHERE { ?city dbo:country  dbr: ' + country + '. ?city rdf:type dbo:City. } '
+				answer = execute_sparql(query)
+			except:
+				answer = 'SPARQL Request failed.'
+				return ''
+
+			botanswer = str(answer)
+			return botanswer
+		elif 'WIE VIELE STÄDTE HAT' in userinput:
+			try:
+				country = str(botanswer)
+				query = ' SELECT COUNT (?city) WHERE { ?city dbo:country  dbr: ' + country + '. ?city rdf:type dbo:City. } '
+				answer = execute_sparql(query)
+			except:
+				answer = 'SPARQL Request failed.'
+				return ''
+
+			botanswer = str(answer)
+			return botanswer
+
+		elif 'HOW MANY CITIZEN DOES' in userinput:
+			try:
+				country = str(botanswer)
+				query = ' SELECT COUNT(?city) WHERE { ?city dbo: country  dbr: ' + country + '. ?city rdf: type dbo: City. } '
+				answer = execute_sparql(query)
+			except:
+				answer = 'SPARQL Request failed.'
+				return ''
+
+			botanswer = str(answer)
+			return botanswer
+
+		elif 'WIE VIELE BÜRGER TUN' in userinput:
+			try:
+				country = str(botanswer)
+				query = ' SELECT COUNT(?city) WHERE { ?city dbo: country  dbr: ' + country + '. ?city rdf: type dbo: City. } '
+				answer = execute_sparql(query)
+			except:
+				answer = 'SPARQL Request failed.'
+				return ''
+
+			botanswer = str(answer)
+			return botanswer

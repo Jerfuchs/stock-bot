@@ -41,7 +41,7 @@ async def talk(ctx):
         if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
             answer = 'I dont know what you mean'
 
-        if "get" in answer:
+        if "get" in command:
             answer = get_api_answer(command, answer)
     if flag:
         answer = translator.translate(answer, lang_src="en", lang_tgt="de")

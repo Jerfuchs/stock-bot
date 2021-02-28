@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
 <category>
     <pattern>WHO IS *</pattern>
     <template><star/></template>
@@ -15,22 +17,24 @@
 
 
 <category>
-    <pattern>HOW MANY CITIES DOES * HAS</pattern>
+    <pattern>HOW MANY CITIES DOES * HAS #</pattern>
     <template><star/></template>
 </category>
 
 <category>
-    <pattern>HOW MANY CITIES DOES * HAVE</pattern>
+    <pattern>HOW MANY CITIES DOES * HAVE #</pattern>
     <template><star/></template>
 </category>
 
 <category>
-    <pattern>HOW MANY CITIZEN DOES * HAS</pattern>
+    <pattern>HOW MANY CITIZEN DOES * HAS #</pattern>
     <template><star/></template>
 </category>
 
 
 <category>
-    <pattern>HOW MANY CITIZEN DOES * HAVE</pattern>
+    <pattern>HOW MANY CITIZEN DOES * HAVE #</pattern>
     <template><star/></template>
 </category>
+
+</aiml>
