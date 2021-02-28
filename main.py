@@ -7,6 +7,7 @@ from discord.ext import commands
 from config.config import *
 import typing as t
 from google_trans_new import google_translator
+from sparql.dbpedia import DBpedia
 
 # from optional import Optional
 
@@ -29,17 +30,22 @@ async def talk(ctx):
     if ctx.author.bot:  # If statement so the bot doesn't message itself
         return
 
+    db = DBpedia()
+    flag = False
+    command = ctx.clean_content
+    answer = db.askDbpedia(command)
     command = translator.translate(ctx.clean_content, lang_src="de", lang_tgt="en")
-    answer = stock_bot.ask_question(command)
-    if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
-        answer = 'I dont know what you mean'
+    if answer == "Not Found":
+        flag = True
+        answer = stock_bot.ask_question(command)
+        if answer is None:  # If bot doesn't understand language = ''/ Counter empty message send error
+            answer = 'I dont know what you mean'
 
+        if "get" in answer:
+            answer = get_api_answer(command, answer)
+    if flag:
+        answer = translator.translate(answer, lang_src="en", lang_tgt="de")
     channel = bot.get_channel(ctx.channel.id)
-
-    if "get" in answer:
-        answer = get_api_answer(command, answer)
-
-    answer = translator.translate(answer, lang_src="en", lang_tgt="de")
     await channel.send(answer)  # Text to speech is that the bot speaks out loud ,tts=True
 
 

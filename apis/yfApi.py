@@ -3,9 +3,6 @@ from datetime import datetime
 import pandas as pd
 import json
 
-start_index = 5
-end_index = 8
-
 
 def get_LastPrice(stock): #Dataframe
     date_format = "%Y-%m-%d"
